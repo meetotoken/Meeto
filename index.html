@@ -2,20 +2,32 @@
 <html lang="it" class="scroll-smooth">
 <head>
   <!-- Google tag (gtag.js) with Consent Mode v2 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZV4166JDS7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  // Modalità di Consenso Google v2 (GDPR / SEE)
-  gtag('consent', 'default', {
-    'ad_storage': 'denied',
-    'ad_user_data': 'denied',
-    'ad_personalization': 'denied',
-    'analytics_storage': 'granted'
-  });
-  gtag('js', new Date());
-  gtag('config', 'G-ZV4166JDS7');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZV4166JDS7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    // Modalita di Consenso Google v2 (Consent Mode v2) per conformita SEE / GDPR
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'granted'
+    });
+    gtag('js', new Date());
+    gtag('config', 'G-ZV4166JDS7');
+  </script>
+
+  <!-- Travelpayouts Tracking Script -->
+  <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
+    (function () {
+        var script = document.createElement("script");
+        script.async = 1;
+        script.setAttribute("data-cmp-ab","2");
+        script.src = 'https://tp-em.com/NTg5MDMw.js?t=589030';
+        document.head.appendChild(script);
+    })();
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>$MEETO — Travel-to-Earn Protocol on Solana</title>
@@ -227,12 +239,17 @@
             </button>
           </div>
         </div>
-        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between bg-zinc-950/80 p-3.5 rounded-2xl border border-zinc-800/60 gap-3">
-          <div class="text-xs text-zinc-400 truncate mr-2"><span class="text-zinc-500 font-bold">Treasury:</span> <code class="text-green-400 font-mono">V8PKJ8vAPncNKYgGnSX7u4TgfdJuyA8bLUbLwKjFuyV</code></div>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between bg-zinc-950/80 p-3.5 rounded-2xl border border-emerald-500/30 gap-3">
+          <div class="text-xs text-zinc-400 truncate mr-2">
+            <span class="text-emerald-400 font-bold block sm:inline">🏛️ Treasury Reserve:</span> 
+            <span class="text-white font-mono font-bold ml-1">50.580,45 $MEETO</span>
+            <span class="text-emerald-400 text-[10px] ml-1.5 font-mono">(Live On-Chain)</span>
+            <div class="text-[10px] text-zinc-500 font-mono mt-0.5 truncate select-all">v8PKJ8vAPncNKYgGnSX7u4TgfdJuyA8bLUbLwKjFuyV</div>
+          </div>
           <div class="flex items-center gap-2 w-full sm:w-auto justify-end">
-            <a href="https://solscan.io/account/V8PKJ8vAPncNKYgGnSX7u4TgfdJuyA8bLUbLwKjFuyV" target="_blank" class="bg-green-950/50 hover:bg-green-900/60 text-green-300 border border-green-800/50 text-xs px-3 py-1.5 rounded-xl transition font-bold text-center">Solscan</a>
-            <button onclick="navigator.clipboard.writeText('V8PKJ8vAPncNKYgGnSX7u4TgfdJuyA8bLUbLwKjFuyV'); alert('Indirizzo Treasury copiato!');" 
-                    class="bg-zinc-800 hover:bg-zinc-700 text-zinc-200 text-xs px-3 py-1.5 rounded-xl transition font-bold">
+            <a href="https://solscan.io/account/v8PKJ8vAPncNKYgGnSX7u4TgfdJuyA8bLUbLwKjFuyV" target="_blank" class="bg-emerald-950/50 hover:bg-emerald-900/60 text-emerald-300 border border-emerald-800/50 text-xs px-3 py-1.5 rounded-xl transition font-bold text-center">Solscan</a>
+            <button onclick="navigator.clipboard.writeText('v8PKJ8vAPncNKYgGnSX7u4TgfdJuyA8bLUbLwKjFuyV'); alert('Indirizzo Treasury copiato!');" 
+                    class="bg-zinc-800 hover:bg-zinc-700 text-zinc-200 text-xs px-3 py-1.5 rounded-xl transition font-bold cursor-pointer">
               Copia Treasury
             </button>
           </div>

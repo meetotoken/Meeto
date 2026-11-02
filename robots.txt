@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://meetotoken.github.io/Meeto/sitemap.xml

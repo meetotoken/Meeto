@@ -3,42 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>$MEETO — Passaporto Culturale & Travel-to-Earn on Solana</title>
-  <meta name="description" content="Il protocollo Culture-Tech su Solana che trasforma le tue visite in 60 monumenti e 25 città italiane in un passaporto digitale verificato con quiz, rotte storiche e ricompense on-chain.">
+  
+  <!-- Titolo & Meta Multilingua Dinamici -->
+  <title id="meta-title">$MEETO — Passaporto Culturale & Travel-to-Earn on Solana</title>
+  <meta name="description" id="meta-desc" content="Il protocollo Culture-Tech su Solana che trasforma le tue visite in 60 monumenti e 25 città italiane in un passaporto digitale verificato con quiz, rotte storiche e ricompense on-chain.">
+  <meta name="keywords" content="Meeto, Solana, Travel to earn, cultural passport, passaporto culturale, turismo italia, web3 travel, pump fun meeto">
+  <meta name="author" content="MEETO Protocol">
   <link rel="canonical" href="https://meetotoken.github.io/Meeto/">
-  <link rel="icon" type="image/jpeg" href="logo.png">
+  <link rel="icon" type="image/png" href="logo.png">
 
-  <!-- OpenGraph / Social Sharing (URL Assoluti per anteprime perfette) -->
+  <!-- TAG HREFLANG PER INDICIZZAZIONE GOOGLE MULTILINGUA -->
+  <link rel="alternate" hreflang="it" href="https://meetotoken.github.io/Meeto/?lang=it" />
+  <link rel="alternate" hreflang="en" href="https://meetotoken.github.io/Meeto/?lang=en" />
+  <link rel="alternate" hreflang="es" href="https://meetotoken.github.io/Meeto/?lang=es" />
+  <link rel="alternate" hreflang="fr" href="https://meetotoken.github.io/Meeto/?lang=fr" />
+  <link rel="alternate" hreflang="de" href="https://meetotoken.github.io/Meeto/?lang=de" />
+  <link rel="alternate" hreflang="x-default" href="https://meetotoken.github.io/Meeto/" />
+
+  <!-- OpenGraph / Social Sharing (Facebook, Telegram, WhatsApp, LinkedIn) -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://meetotoken.github.io/Meeto/">
-  <meta property="og:title" content="$MEETO — Passaporto Culturale & Travel-to-Earn on Solana">
-  <meta property="og:description" content="Meno schermi, più cultura e vita reale. 60 monumenti in 25 città d'arte italiane con audioguide e timbri souvenir on-chain.">
+  <meta property="og:site_name" content="$MEETO Passaporto Culturale">
+  <meta property="og:title" id="og-title" content="$MEETO — Passaporto Culturale & Travel-to-Earn on Solana">
+  <meta property="og:description" id="og-desc" content="Meno schermi, più cultura e vita reale. 60 monumenti in 25 città d'arte italiane con audioguide e timbri souvenir on-chain.">
   <meta property="og:image" content="https://meetotoken.github.io/Meeto/meeto-x-post.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter / X Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@MeetoToken">
-  <meta name="twitter:title" content="$MEETO — Passaporto Culturale & Travel-to-Earn">
-  <meta name="twitter:description" content="Esplora l'Italia, convalida la visita con GPS hardware e guadagna souvenir su Solana.">
+  <meta name="twitter:creator" content="@MeetoToken">
+  <meta name="twitter:title" id="tw-title" content="$MEETO — Passaporto Culturale & Travel-to-Earn">
+  <meta name="twitter:description" id="tw-desc" content="Esplora l'Italia, convalida la visita con GPS hardware e guadagna souvenir su Solana.">
   <meta name="twitter:image" content="https://meetotoken.github.io/Meeto/meeto-x-post.jpg">
 
-  <!-- Dati Strutturati Google (Schema.org JSON-LD) -->
+  <!-- Dati Strutturati Google (Schema.org JSON-LD Completo con FAQPage e WebApplication) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "$MEETO Passaporto Culturale",
-    "url": "https://meetotoken.github.io/Meeto/",
-    "applicationCategory": "TravelApplication",
-    "operatingSystem": "All",
-    "description": "Applicazione Web3 su Solana per esplorare 25 città storiche italiane e 60 monumenti con audioguide vocali e timbri souvenir.",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "EUR"
-    }
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://meetotoken.github.io/Meeto/#webapp",
+        "name": "$MEETO Passaporto Culturale",
+        "alternateName": "$MEETO Cultural Passport & Travel-to-Earn",
+        "url": "https://meetotoken.github.io/Meeto/",
+        "applicationCategory": "TravelApplication",
+        "operatingSystem": "All (iOS, Android, Web)",
+        "inLanguage": ["it", "en", "es", "fr", "de"],
+        "description": "Applicazione Web3 su Solana per esplorare 25 città storiche italiane e 60 monumenti con audioguide vocali e timbri souvenir on-chain.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://meetotoken.github.io/Meeto/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Cos'è il Passaporto Culturale $MEETO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "$MEETO è un protocollo Culture-Tech su blockchain Solana che valorizza 60 monumenti in 25 città italiane, trasformando ogni visita convalidata da GPS in un timbro Polaroid souvenir con XP e incentivi."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the Travel-to-Earn mechanism work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Travelers visit real historical sites in Italy, check in using high-accuracy mobile GPS, solve cultural trivia quizzes, and claim digital souvenirs and ecosystem rewards on Solana."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Qual è il Contract Address ufficiale del token $MEETO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "L'indirizzo ufficiale verificato su Solana è: 4MPMa8mdsrjaCJGN1CrNG1dQDh357SEzoAu9QR7vpump."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 
-  <!-- Google tag (gtag.js) with Consent Mode v2 -->
+  <!-- Google tag (gtag.js) con Consent Mode v2 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZV4166JDS7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -53,25 +108,19 @@
     gtag('config', 'G-ZV4166JDS7');
   </script>
 
-  <!-- Travelpayouts Tracking Script -->
-  <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
-    (function () {
-        var script = document.createElement("script");
-        script.async = 1;
-        script.setAttribute("data-cmp-ab","2");
-        script.src = 'https://tp-em.com/NTg5MDMw.js?t=589030';
-        document.head.appendChild(script);
-    })();
-  </script>
+  <!-- Travelpayouts Tracking Script (attributi standard puliti) -->
+  <script async src="https://tp-em.com/NTg5MDMw.js?t=589030"></script>
 
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font & Tailwind -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body { font-family: 'Plus Jakarta Sans', sans-serif; }
-    .glass-panel { background: rgba(14, 15, 22, 0.75); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); border: 1px solid rgba(255, 255, 255, 0.08); }
-    .glass-card { background: rgba(20, 22, 32, 0.6); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.06); }
+    .glass-panel { background: rgba(14, 15, 22, 0.85); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); border: 1px solid rgba(255, 255, 255, 0.08); }
+    .glass-card { background: rgba(20, 22, 32, 0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
     .neon-gold-glow { box-shadow: 0 0 35px rgba(245, 158, 11, 0.25); }
     .neon-green-glow { box-shadow: 0 0 35px rgba(34, 197, 94, 0.2); }
     .gold-gradient-text {
@@ -79,16 +128,37 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+    /* Toast animato non bloccante (sostituto di alert) */
+    #toast-notification {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      transform: translateY(100px);
+      opacity: 0;
+      pointer-events: none;
+    }
+    #toast-notification.show {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
   </style>
 </head>
 <body class="bg-[#07070A] text-zinc-100 min-h-screen flex flex-col justify-between selection:bg-amber-500/20 selection:text-amber-200">
 
-  <!-- NAVBAR UNIFICATA (SENZA TELEGRAM) -->
-  <header class="glass-panel sticky top-0 z-50 border-b border-zinc-800/80">
+  <!-- TOAST NOTIFICA COPIA (NESSUN window.alert bloccante) -->
+  <div id="toast-notification" class="fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-zinc-900 border border-emerald-500/50 px-4 py-3 rounded-2xl shadow-2xl text-white">
+    <div class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xs">✓</div>
+    <div>
+      <div class="text-xs font-bold text-white" id="toast-title">Copiato negli appunti!</div>
+      <div class="text-[11px] text-zinc-400" id="toast-desc">Indirizzo pronto da incollare nel tuo wallet.</div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="glass-panel sticky top-0 z-40 border-b border-zinc-800/80">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3.5 flex justify-between items-center">
       
       <div class="flex items-center gap-3">
-        <a href="#" class="w-10 h-10 rounded-full border border-amber-500/50 p-0.5 bg-zinc-900 shadow-md flex items-center justify-center overflow-hidden shrink-0 hover:scale-105 transition">
+        <a href="#" class="w-10 h-10 rounded-full border border-amber-500/50 p-0.5 bg-zinc-900 shadow-md flex items-center justify-center overflow-hidden shrink-0 hover:scale-105 transition" aria-label="Home $MEETO">
           <img src="logo.png" alt="$MEETO Logo" class="w-full h-full object-cover rounded-full" onerror="this.src='https://meetotoken.github.io/Meeto/logo.png'">
         </a>
         <div class="flex items-center gap-2">
@@ -98,7 +168,7 @@
       </div>
 
       <!-- Nav Links Desktop -->
-      <nav class="hidden md:flex items-center gap-5 text-xs font-semibold text-zinc-400">
+      <nav class="hidden md:flex items-center gap-5 text-xs font-semibold text-zinc-300">
         <a href="#monuments" class="hover:text-amber-300 transition" id="nav-monuments">60 Monumenti</a>
         <a href="#quests" class="hover:text-amber-300 transition" id="nav-quests">Rotte & Quests</a>
         <a href="#travel" class="hover:text-amber-300 transition" id="nav-travel">Travel Planner</a>
@@ -106,18 +176,20 @@
         <a href="#onchain" class="hover:text-amber-300 transition" id="nav-onchain">On-Chain</a>
       </nav>
 
-      <!-- Azioni Navbar -->
+      <!-- Selettore Lingua Sincronizzato con URL e SEO -->
       <div class="flex items-center gap-2 sm:gap-3">
-        <button onclick="toggleLanguage()" id="lang-btn" class="h-9 px-3 bg-zinc-900/90 hover:bg-zinc-800 border border-zinc-700/60 text-amber-300 font-bold text-xs rounded-xl transition flex items-center gap-1.5 shadow-sm cursor-pointer">
-          <span>🌐</span> <span id="lang-text">IT / EN</span>
-        </button>
+        <div class="relative inline-block">
+          <button onclick="toggleLanguage()" id="lang-btn" class="h-9 px-3 bg-zinc-900/90 hover:bg-zinc-800 border border-amber-500/40 text-amber-300 font-bold text-xs rounded-xl transition flex items-center gap-1.5 shadow-sm cursor-pointer" aria-label="Cambia Lingua">
+            <span>🌐</span> <span id="lang-text">IT</span>
+          </button>
+        </div>
 
-        <a href="https://x.com/MeetoToken" target="_blank" rel="noreferrer" class="w-9 h-9 bg-zinc-900/90 hover:bg-zinc-800 border border-zinc-700/60 rounded-xl flex items-center justify-center transition text-zinc-300 hover:text-white" title="Profilo Ufficiale X (Twitter)">
+        <a href="https://x.com/MeetoToken" target="_blank" rel="noopener noreferrer" class="w-9 h-9 bg-zinc-900/90 hover:bg-zinc-800 border border-zinc-700/60 rounded-xl flex items-center justify-center transition text-zinc-300 hover:text-white" title="Profilo Ufficiale X (Twitter)">
           <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
         </a>
 
-        <!-- LINK DIRETTO VERSO LA WEBAPP CON TRACKING UTM -->
-        <a href="https://meetotoken.github.io/meeto-app-dev/?utm_source=landing_nav" target="_blank" class="h-9 px-4 bg-gradient-to-r from-amber-500 to-yellow-500 text-black font-extrabold text-xs rounded-xl flex items-center justify-center hover:opacity-95 shadow-md transition">
+        <!-- LINK DIRETTO VERSO LA WEBAPP -->
+        <a href="https://meetotoken.github.io/meeto-app-dev/?utm_source=landing_nav" target="_blank" rel="noopener" class="h-9 px-4 bg-gradient-to-r from-amber-500 to-yellow-500 text-black font-extrabold text-xs rounded-xl flex items-center justify-center hover:opacity-95 shadow-md transition">
           🚀 <span class="ml-1" id="nav-btn-app">Apri App Live</span>
         </a>
       </div>
@@ -139,7 +211,7 @@
 
       <div class="inline-flex items-center justify-center gap-2 px-4 py-1.5 bg-zinc-900/90 border border-amber-500/30 rounded-full text-xs font-semibold text-amber-300 mb-5 shadow-sm">
         <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
-        <span id="badge-text">V2.5 Live • 60 Monumenti • 25 Città d'Arte</span>
+        <span id="badge-text">V2.6 Live • 60 Monumenti • 25 Città d'Arte</span>
       </div>
 
       <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white mb-5 leading-[1.1]" id="hero-title">
@@ -150,21 +222,21 @@
         Il protocollo Culture-Tech su Solana che trasforma le tue visite in 60 monumenti italiani in un passaporto digitale verificato con quiz storici, rotte culturali, XP e ricompense on-chain.
       </p>
 
-      <!-- PULSANTI PRINCIPALI (SENZA TELEGRAM) -->
+      <!-- PULSANTI PRINCIPALI -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 w-full max-w-4xl mx-auto">
-        <a href="https://meetotoken.github.io/meeto-app-dev/?utm_source=landing_hero" target="_blank" id="btn-miniapp"
+        <a href="https://meetotoken.github.io/meeto-app-dev/?utm_source=landing_hero" target="_blank" rel="noopener" id="btn-miniapp"
            class="p-3.5 bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 hover:opacity-95 text-black font-black text-xs rounded-2xl transition text-center shadow-lg flex items-center justify-center gap-1.5 border border-amber-300 cursor-pointer sm:col-span-2 lg:col-span-1">
           🏛️ Avvia Passaporto WebApp
         </a>
-        <a href="https://x.com/MeetoToken" target="_blank" id="btn-x-profile"
+        <a href="https://x.com/MeetoToken" target="_blank" rel="noopener noreferrer" id="btn-x-profile"
            class="p-3.5 bg-black border border-zinc-700/80 hover:bg-zinc-900 text-white font-extrabold text-xs rounded-2xl transition text-center flex items-center justify-center gap-1.5">
           🐦 Profilo Ufficiale X
         </a>
-        <a href="https://pump.fun/coin/4MPMa8mdsrjaCJGN1CrNG1dQDh357SEzoAu9QR7vpump" target="_blank" id="btn-pump"
+        <a href="https://pump.fun/coin/4MPMa8mdsrjaCJGN1CrNG1dQDh357SEzoAu9QR7vpump" target="_blank" rel="noopener noreferrer" id="btn-pump"
            class="p-3.5 bg-zinc-900/90 border border-zinc-700/80 hover:bg-zinc-800 text-green-400 font-extrabold text-xs rounded-2xl transition text-center flex items-center justify-center gap-1.5">
           🚀 Acquista su Pump.fun
         </a>
-        <a href="https://dexscreener.com/solana/4MPMa8mdsrjaCJGN1CrNG1dQDh357SEzoAu9QR7vpump" target="_blank" id="btn-dex"
+        <a href="https://dexscreener.com/solana/4MPMa8mdsrjaCJGN1CrNG1dQDh357SEzoAu9QR7vpump" target="_blank" rel="noopener noreferrer" id="btn-dex"
            class="p-3.5 bg-zinc-900/90 border border-zinc-700/80 hover:bg-zinc-800 text-zinc-200 font-extrabold text-xs rounded-2xl transition text-center flex items-center justify-center gap-1.5">
           📊 Grafico DexScreener
         </a>
@@ -200,38 +272,9 @@
           🇮🇹 <span id="lbl-italy-badge">Database Geografico Verificato</span>
         </div>
         <h2 class="text-2xl sm:text-3xl font-black text-white" id="lbl-monuments-title">25 Città d'Arte, 60 Monumenti Unici</h2>
-        <p class="text-xs sm:text-sm text-zinc-400 max-w-xl mx-auto mt-1" id="lbl-monuments-desc">
+        <p class="text-xs sm:text-sm text-zinc-300 max-w-xl mx-auto mt-1" id="lbl-monuments-desc">
           Dalle meraviglie imperiali di Roma e i capolavori del Rinascimento a Firenze, fino ai templi greci della Sicilia e ai borghi marinari delle Cinque Terre.
         </p>
-      </div>
-
-      <!-- Città Cloud Tags -->
-      <div class="flex flex-wrap justify-center gap-2 mb-6">
-        <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-300">🏛️ Roma (5)</span>
-        <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-300">🎨 Firenze (6)</span>
-        <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-300">🎭 Venezia (3)</span>
-        <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-300">🍕 Napoli (3)</span>
-        <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-300">🏰 Milano (3)</span>
-        <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-300">👑 Torino (2)</span>
-        <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-300">🗼 Bologna (2)</span>
-        <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-300">⚔️ Verona (2)</span>
-        <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-300">📐 Pisa (2)</span>
-        <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-300">🐎 Siena (2)</span>
-        <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-300">⚓ Genova (2)</span>
-        <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-300">🪨 Matera (2)</span>
-        <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-300">🏰 Bari (2)</span>
-        <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-300">🌴 Palermo (2)</span>
-        <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-300">🌋 Catania (2)</span>
-        <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-300">🏺 Agrigento (2)</span>
-        <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-300">🏛️ Siracusa (2)</span>
-        <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-300">⚜️ Lecce (2)</span>
-        <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-300">🕊️ Assisi (2)</span>
-        <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-300">✨ Ravenna (2)</span>
-        <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-300">🏔️ Aosta (2)</span>
-        <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-300">🏺 Taormina (2)</span>
-        <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-300">🌋 Pompei (2)</span>
-        <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-300">🌊 Cinque Terre (2)</span>
-        <span class="px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 text-xs font-semibold text-zinc-300">🏰 Lucca (2)</span>
       </div>
 
       <!-- Highlights Grid -->
@@ -239,17 +282,17 @@
         <div class="glass-card p-5 rounded-2xl border border-amber-500/20">
           <div class="text-amber-400 font-bold text-xs uppercase mb-1">Archeologia & Antichità</div>
           <div class="text-white font-black text-sm mb-1">Colosseo, Pantheon & Pompei</div>
-          <p class="text-[11px] text-zinc-400">Verifica la tua presenza di fronte ai teatri romani e agli scavi archeologici dell'antica Roma.</p>
+          <p class="text-xs text-zinc-300">Verifica la tua presenza di fronte ai teatri romani e agli scavi archeologici dell'antica Roma.</p>
         </div>
         <div class="glass-card p-5 rounded-2xl border border-purple-500/20">
           <div class="text-purple-400 font-bold text-xs uppercase mb-1">Rinascimento & Umanesimo</div>
           <div class="text-white font-black text-sm mb-1">Brunelleschi, Uffizi & Piazza Campo</div>
-          <p class="text-[11px] text-zinc-400">Risolvi i quiz artistici e riscopri i maestri del Rinascimento tra Firenze, Siena e Pisa.</p>
+          <p class="text-xs text-zinc-300">Risolvi i quiz artistici e riscopri i maestri del Rinascimento tra Firenze, Siena e Pisa.</p>
         </div>
         <div class="glass-card p-5 rounded-2xl border border-emerald-500/20">
           <div class="text-emerald-400 font-bold text-xs uppercase mb-1">Magna Grecia & Patrimonio UNESCO</div>
           <div class="text-white font-black text-sm mb-1">Valle dei Templi, Sassi & Ortigia</div>
-          <p class="text-[11px] text-zinc-400">Visita i siti rupestri millenari di Matera e i templi dorici di Agrigento e Siracusa.</p>
+          <p class="text-xs text-zinc-300">Visita i siti rupestri millenari di Matera e i templi dorici di Agrigento e Siracusa.</p>
         </div>
       </div>
     </section>
@@ -260,7 +303,7 @@
         🏆 <span id="lbl-quest-tag">Gamification & Badge Esclusivi</span>
       </div>
       <h2 class="text-2xl font-black text-white mb-2" id="lbl-quest-title">Rotte Culturali Tematiche (Quests)</h2>
-      <p class="text-xs sm:text-sm text-zinc-400 mb-6" id="lbl-quest-subtitle">
+      <p class="text-xs sm:text-sm text-zinc-300 mb-6" id="lbl-quest-subtitle">
         Completa le rotte esplorando città diverse per sbloccare badge leggendari e moltiplicatori XP nel passaporto:
       </p>
 
@@ -270,7 +313,7 @@
             <span class="text-lg">🏛️ <b class="text-white text-sm">Rotta Imperiale Romana</b></span>
             <span class="text-xs font-bold text-amber-400 bg-amber-500/10 px-2.5 py-0.5 rounded-full">+500 XP</span>
           </div>
-          <p class="text-xs text-zinc-400 mb-2">Visita Colosseo, Pantheon e Arco di Augusto ad Aosta. Sblocca il titolo <i>"Imperatore dell'Arte"</i>.</p>
+          <p class="text-xs text-zinc-300 mb-2">Visita Colosseo, Pantheon e Arco di Augusto ad Aosta. Sblocca il titolo <i>"Imperatore dell'Arte"</i>.</p>
         </div>
 
         <div class="bg-zinc-950/70 p-4 rounded-2xl border border-zinc-800">
@@ -278,129 +321,68 @@
             <span class="text-lg">🎨 <b class="text-white text-sm">Tris del Rinascimento Toscano</b></span>
             <span class="text-xs font-bold text-amber-400 bg-amber-500/10 px-2.5 py-0.5 rounded-full">+400 XP</span>
           </div>
-          <p class="text-xs text-zinc-400 mb-2">Firenze (Duomo), Siena (Piazza del Campo) e Pisa (Piazza dei Miracoli). Sblocca <i>"Maestro Rinascimentale"</i>.</p>
-        </div>
-
-        <div class="bg-zinc-950/70 p-4 rounded-2xl border border-zinc-800">
-          <div class="flex items-center justify-between mb-2">
-            <span class="text-lg">🌋 <b class="text-white text-sm">Magna Grecia & Sicilia Antica</b></span>
-            <span class="text-xs font-bold text-amber-400 bg-amber-500/10 px-2.5 py-0.5 rounded-full">+600 XP</span>
-          </div>
-          <p class="text-xs text-zinc-400 mb-2">Valle dei Templi, Teatro di Siracusa, Duomo di Catania e Palermo. Sblocca <i>"Eroe della Magna Grecia"</i>.</p>
-        </div>
-
-        <div class="bg-zinc-950/70 p-4 rounded-2xl border border-zinc-800">
-          <div class="flex items-center justify-between mb-2">
-            <span class="text-lg">🏰 <b class="text-white text-sm">Pietra & Castelli del Sud</b></span>
-            <span class="text-xs font-bold text-amber-400 bg-amber-500/10 px-2.5 py-0.5 rounded-full">+450 XP</span>
-          </div>
-          <p class="text-xs text-zinc-400 mb-2">I Sassi rupestri di Matera, Castel del Monte e Lecce Barocca. Sblocca <i>"Custode del Sud"</i>.</p>
+          <p class="text-xs text-zinc-300 mb-2">Firenze (Duomo), Siena (Piazza del Campo) e Pisa (Piazza dei Miracoli). Sblocca <i>"Maestro Rinascimentale"</i>.</p>
         </div>
       </div>
     </section>
 
-    <!-- COME FUNZIONA (3 STEP) -->
-    <div class="w-full mb-14">
-      <h2 class="text-xl sm:text-2xl font-black text-white mb-8 text-center" id="lbl-v2e-title">Come Funziona il Passaporto Culturale</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-        <div class="glass-panel p-6 rounded-3xl border border-zinc-800/80">
-          <div class="text-3xl mb-3">🗺️</div>
-          <h3 class="text-base font-bold text-white mb-2" id="lbl-step1-title">1. Mappa & Esplora</h3>
-          <p class="text-xs text-zinc-400 leading-relaxed" id="lbl-step1-desc">Apri l'app sul telefono e individua i 60 monumenti georeferenziati nelle 25 città d'arte italiane.</p>
-        </div>
-        <div class="glass-panel p-6 rounded-3xl border border-zinc-800/80">
-          <div class="text-3xl mb-3">📍</div>
-          <h3 class="text-base font-bold text-white mb-2" id="lbl-step2-title">2. Check-In & Quiz Fisico</h3>
-          <p class="text-xs text-zinc-400 leading-relaxed" id="lbl-step2-desc">Raggiungi il monumento (entro raggio GPS), scatta la foto ricordo e rispondi alla domanda culturale.</p>
-        </div>
-        <div class="glass-panel p-6 rounded-3xl border border-zinc-800/80">
-          <div class="text-3xl mb-3">🏆</div>
-          <h3 class="text-base font-bold text-white mb-2" id="lbl-step3-title">3. Timbro, XP & Ricompense</h3>
-          <p class="text-xs text-zinc-400 leading-relaxed" id="lbl-step3-desc">Ottieni il timbro Polaroid con data e foto nel passaporto, accumula XP e convertili in ricompense $MEETO on-chain.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- SEZIONE 3: TRAVEL PLANNER & LINK AFFILIATI VERIFICATI -->
+    <!-- SEZIONE 3: TRAVEL PLANNER (CON DISCLOSURE AFFILIATI TRASPARENTE) -->
     <section id="travel" class="w-full glass-panel rounded-3xl p-6 sm:p-8 mb-14 border border-blue-500/30">
-      <div class="flex items-center gap-2 text-xs font-bold text-blue-400 uppercase tracking-wider mb-2">
-        ✈️ <span id="lbl-travel-tag">Travel-Tech & Sostenibilità</span>
+      <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
+        <div class="flex items-center gap-2 text-xs font-bold text-blue-400 uppercase tracking-wider">
+          ✈️ <span id="lbl-travel-tag">Travel-Tech & Sostenibilità</span>
+        </div>
+        <span class="text-[11px] bg-blue-500/10 text-blue-300 border border-blue-500/30 px-2.5 py-0.5 rounded-full">
+          Conformità & Trasparenza Partner
+        </span>
       </div>
       <h2 class="text-2xl font-black text-white mb-3" id="lbl-travel-title">Pianifica il Tuo Viaggio con i Partner Ufficiali</h2>
       <p class="text-xs sm:text-sm text-zinc-300 leading-relaxed mb-6" id="lbl-travel-desc">
         Il protocollo $MEETO integra servizi turistici reali con tariffe agevolate. Ogni prenotazione alimenta direttamente il meccanismo di Buyback & Burn del token $MEETO sul mercato aperto.
       </p>
 
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
         <!-- Voli Aviasales -->
-        <a href="https://aviasales.tpx.gr/Nde5oFmC" target="_blank" rel="noopener noreferrer"
+        <a href="https://aviasales.tpx.gr/Nde5oFmC" target="_blank" rel="noopener noreferrer sponsored"
            class="bg-zinc-950/80 hover:bg-zinc-900 border border-zinc-800/80 hover:border-blue-500/40 p-4 rounded-2xl transition flex flex-col justify-between">
           <div>
             <div class="text-2xl mb-2">🛫</div>
             <div class="font-bold text-white text-sm mb-1" id="lbl-trv1-title">Voli & Trasporti (Aviasales)</div>
-            <p class="text-xs text-zinc-400" id="lbl-trv1-desc">Confronta oltre 700 compagnie aeree per raggiungere le città d'arte italiane al prezzo più basso.</p>
+            <p class="text-xs text-zinc-300" id="lbl-trv1-desc">Confronta oltre 700 compagnie aeree per raggiungere le città d'arte italiane al prezzo più basso.</p>
           </div>
           <span class="text-blue-400 text-xs font-bold mt-4 flex items-center gap-1">Cerca Voli Low Cost &rarr;</span>
         </a>
 
         <!-- Biglietti Tiqets -->
-        <a href="https://tiqets.tpx.gr/ttfIofVS" target="_blank" rel="noopener noreferrer"
+        <a href="https://tiqets.tpx.gr/ttfIofVS" target="_blank" rel="noopener noreferrer sponsored"
            class="bg-zinc-950/80 hover:bg-zinc-900 border border-zinc-800/80 hover:border-amber-500/40 p-4 rounded-2xl transition flex flex-col justify-between">
           <div>
             <div class="text-2xl mb-2">🎟️</div>
             <div class="font-bold text-white text-sm mb-1" id="lbl-trv2-title">Biglietti Salta-Fila (Tiqets)</div>
-            <p class="text-xs text-zinc-400" id="lbl-trv2-desc">Ingressi prioritari ufficiali per Colosseo, Galleria degli Uffizi, Duomo e Scavi di Pompei.</p>
+            <p class="text-xs text-zinc-300" id="lbl-trv2-desc">Ingressi prioritari ufficiali per Colosseo, Galleria degli Uffizi, Duomo e Scavi di Pompei.</p>
           </div>
           <span class="text-amber-400 text-xs font-bold mt-4 flex items-center gap-1">Prenota Salta-Fila &rarr;</span>
         </a>
 
         <!-- eSIM Airalo -->
-        <a href="https://airalo.tpx.gr/92EACKvl" target="_blank" rel="noopener noreferrer"
+        <a href="https://airalo.tpx.gr/92EACKvl" target="_blank" rel="noopener noreferrer sponsored"
            class="bg-zinc-950/80 hover:bg-zinc-900 border border-zinc-800/80 hover:border-emerald-500/40 p-4 rounded-2xl transition flex flex-col justify-between">
           <div>
             <div class="text-2xl mb-2">📶</div>
             <div class="font-bold text-white text-sm mb-1" id="lbl-trv3-title">eSIM Dati Mobile (Airalo)</div>
-            <p class="text-xs text-zinc-400" id="lbl-trv3-desc">Connettività 4G/5G immediata senza roaming per navigare e validare i timbri GPS in oltre 200 paesi.</p>
+            <p class="text-xs text-zinc-300" id="lbl-trv3-desc">Connettività 4G/5G immediata senza roaming per navigare e validare i timbri GPS in oltre 200 paesi.</p>
           </div>
           <span class="text-emerald-400 text-xs font-bold mt-4 flex items-center gap-1">Attiva eSIM Dati &rarr;</span>
         </a>
       </div>
-    </section>
 
-    <!-- GRAFICO MERCATO ON-CHAIN (LAZY LOADING) -->
-    <div class="w-full glass-panel rounded-3xl p-4 sm:p-5 mb-14 border border-zinc-800">
-      <div class="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-3 px-2" id="lbl-chart">Andamento di Mercato On-Chain (Solana)</div>
-      <div style="position: relative; width: 100%; height: 440px;">
-        <iframe src="https://dexscreener.com/solana/4MPMa8mdsrjaCJGN1CrNG1dQDh357SEzoAu9QR7vpump?embed=1&theme=dark&trades=0&info=0" 
-                loading="lazy"
-                title="DexScreener Price Chart"
-                style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: 0; border-radius: 16px;"></iframe>
-      </div>
-    </div>
-
-    <!-- TOKENOMICS UFFICIALE (70 / 20 / 10) -->
-    <section id="tokenomics" class="w-full glass-panel rounded-3xl p-6 sm:p-8 mb-14 border border-zinc-800">
-      <h2 class="text-xl sm:text-2xl font-black text-white mb-6" id="lbl-tokenomics-title">📊 Tokenomics Ufficiale (1 Miliardo $MEETO)</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <div class="bg-zinc-950/70 p-5 rounded-2xl border border-zinc-800/60">
-          <div class="text-emerald-400 text-2xl font-black mb-1">70%</div>
-          <div class="text-xs font-bold text-white mb-1" id="lbl-tok1-title">Mercato Pubblico</div>
-          <div class="text-[11px] text-zinc-400" id="lbl-tok1-desc">700M $MEETO per liquidità e circolante decentralizzato.</div>
-        </div>
-        <div class="bg-zinc-950/70 p-5 rounded-2xl border border-zinc-800/60">
-          <div class="text-amber-400 text-2xl font-black mb-1">20%</div>
-          <div class="text-xs font-bold text-white mb-1" id="lbl-tok2-title">Organizzatori & Team</div>
-          <div class="text-[11px] text-zinc-400" id="lbl-tok2-desc">200M $MEETO allocati per mantenimento, ricerca & sviluppo e contratti territoriali.</div>
-        </div>
-        <div class="bg-zinc-950/70 p-5 rounded-2xl border border-zinc-800/60">
-          <div class="text-purple-400 text-2xl font-black mb-1">10%</div>
-          <div class="text-xs font-bold text-white mb-1" id="lbl-tok3-title">Treasury & Rewards</div>
-          <div class="text-[11px] text-zinc-400" id="lbl-tok3-desc">100M $MEETO riservati a incentivi culturali per viaggiatori ed esploratori.</div>
-        </div>
+      <!-- Affiliate Transparency Note -->
+      <div class="text-[11px] text-zinc-400 border-t border-zinc-800/60 pt-3">
+        ℹ️ <i>Disclosure pubblicitaria: I link sopra sono sponsorizzati e generano una commissione reinvestita nel treasury di $MEETO per premiare la community, senza alcun costo aggiuntivo per l'utente.</i>
       </div>
     </section>
 
-    <!-- TRASPARENZA ON-CHAIN -->
+    <!-- TRASPARENZA ON-CHAIN (CON TOAST INVECE DI ALERT) -->
     <section id="onchain" class="w-full glass-panel rounded-3xl p-5 sm:p-6 mb-10 border border-zinc-800">
       <div class="flex items-center justify-between mb-4">
         <div class="text-xs font-bold text-zinc-400 uppercase tracking-wider" id="lbl-onchain">Trasparenza On-Chain & Contratti Solana</div>
@@ -408,70 +390,40 @@
       </div>
       <div class="space-y-3">
         <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between bg-zinc-950/80 p-3.5 rounded-2xl border border-zinc-800/60 gap-3">
-          <div class="text-xs text-zinc-400 truncate mr-2">
-            <span class="text-zinc-500 font-bold">Contract Address (CA):</span> 
+          <div class="text-xs text-zinc-300 truncate mr-2">
+            <span class="text-zinc-400 font-bold">Contract Address (CA):</span> 
             <code class="text-amber-400 font-mono select-all">4MPMa8mdsrjaCJGN1CrNG1dQDh357SEzoAu9QR7vpump</code>
           </div>
           <div class="flex items-center gap-2 w-full sm:w-auto justify-end">
-            <a href="https://solscan.io/token/4MPMa8mdsrjaCJGN1CrNG1dQDh357SEzoAu9QR7vpump" target="_blank" class="bg-purple-950/50 hover:bg-purple-900/60 text-purple-300 border border-purple-800/50 text-xs px-3 py-1.5 rounded-xl transition font-bold text-center">Solscan</a>
-            <a href="https://birdeye.so/token/4MPMa8mdsrjaCJGN1CrNG1dQDh357SEzoAu9QR7vpump?chain=solana" target="_blank" class="bg-blue-950/50 hover:bg-blue-900/60 text-blue-300 border border-blue-800/50 text-xs px-3 py-1.5 rounded-xl transition font-bold text-center">Birdeye</a>
-            <button onclick="navigator.clipboard.writeText('4MPMa8mdsrjaCJGN1CrNG1dQDh357SEzoAu9QR7vpump'); alert('Contract Address copiato!');" 
+            <a href="https://solscan.io/token/4MPMa8mdsrjaCJGN1CrNG1dQDh357SEzoAu9QR7vpump" target="_blank" rel="noopener noreferrer" class="bg-purple-950/50 hover:bg-purple-900/60 text-purple-300 border border-purple-800/50 text-xs px-3 py-1.5 rounded-xl transition font-bold text-center">Solscan</a>
+            <a href="https://birdeye.so/token/4MPMa8mdsrjaCJGN1CrNG1dQDh357SEzoAu9QR7vpump?chain=solana" target="_blank" rel="noopener noreferrer" class="bg-blue-950/50 hover:bg-blue-900/60 text-blue-300 border border-blue-800/50 text-xs px-3 py-1.5 rounded-xl transition font-bold text-center">Birdeye</a>
+            <button onclick="copyContract('4MPMa8mdsrjaCJGN1CrNG1dQDh357SEzoAu9QR7vpump', 'Contract Address $MEETO')" 
                     class="bg-zinc-800 hover:bg-zinc-700 text-zinc-200 text-xs px-3 py-1.5 rounded-xl transition font-bold cursor-pointer">
               Copia CA
-            </button>
-          </div>
-        </div>
-        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between bg-zinc-950/80 p-3.5 rounded-2xl border border-emerald-500/30 gap-3">
-          <div class="text-xs text-zinc-400 truncate mr-2">
-            <span class="text-emerald-400 font-bold block sm:inline">🏛️ Treasury Reserve:</span> 
-            <span class="text-white font-mono font-bold ml-1">50.580,45 $MEETO</span>
-            <span class="text-emerald-400 text-[10px] ml-1.5 font-mono">(Live On-Chain)</span>
-            <div class="text-[10px] text-zinc-500 font-mono mt-0.5 truncate select-all">v8PKJ8vAPncNKYgGnSX7u4TgfdJuyA8bLUbLwKjFuyV</div>
-          </div>
-          <div class="flex items-center gap-2 w-full sm:w-auto justify-end">
-            <a href="https://solscan.io/account/v8PKJ8vAPncNKYgGnSX7u4TgfdJuyA8bLUbLwKjFuyV" target="_blank" class="bg-emerald-950/50 hover:bg-emerald-900/60 text-emerald-300 border border-emerald-800/50 text-xs px-3 py-1.5 rounded-xl transition font-bold text-center">Solscan</a>
-            <button onclick="navigator.clipboard.writeText('v8PKJ8vAPncNKYgGnSX7u4TgfdJuyA8bLUbLwKjFuyV'); alert('Indirizzo Treasury copiato!');" 
-                    class="bg-zinc-800 hover:bg-zinc-700 text-zinc-200 text-xs px-3 py-1.5 rounded-xl transition font-bold cursor-pointer">
-              Copia Treasury
             </button>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- DISCLAIMER LEGALE -->
-    <div class="w-full bg-zinc-950/50 border border-zinc-900 rounded-3xl p-5 text-left mb-6">
-      <div class="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">⚖️ Disclaimer Legale Ufficiale</div>
-      <p class="text-[11px] text-zinc-500 leading-relaxed" id="lbl-disclaimer">
-        <b>MEETO ($MEETO)</b> è un'iniziativa amatoriale e ricreativa basata sulla gamification del patrimonio culturale e artistico. Il token ha finalità puramente di souvenir digitale e utilità all'interno della community. Non costituisce un'attività finanziaria, uno strumento di investimento o una promessa di rendimento economico.
-      </p>
-    </div>
-
   </main>
 
-  <!-- FOOTER (SENZA TELEGRAM) -->
-  <footer class="border-t border-zinc-900/80 bg-[#050507] py-8 text-center text-xs text-zinc-500">
+  <footer class="border-t border-zinc-900/80 bg-[#050507] py-8 text-center text-xs text-zinc-400">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
       <div class="flex items-center gap-2">
         <span class="font-bold text-zinc-300">$MEETO Protocol</span>
         <span>— Meno schermi, più cultura e vita reale.</span>
       </div>
-      <div class="flex flex-wrap justify-center gap-4 font-medium">
-        <a href="https://x.com/MeetoToken" target="_blank" class="hover:text-amber-300 transition">X (Twitter)</a>
-        <a href="https://dexscreener.com/solana/4MPMa8mdsrjaCJGN1CrNG1dQDh357SEzoAu9QR7vpump" target="_blank" class="hover:text-amber-300 transition">DexScreener</a>
-        <a href="https://pump.fun/coin/4MPMa8mdsrjaCJGN1CrNG1dQDh357SEzoAu9QR7vpump" target="_blank" class="hover:text-amber-300 transition">Pump.fun</a>
-        <a href="https://meetotoken.github.io/meeto-app-dev/" target="_blank" class="hover:text-amber-300 transition">Passaporto WebApp</a>
-      </div>
     </div>
   </footer>
 
-  <!-- SCRIPT PREZZO & TRADUZIONE DINAMICA -->
+  <!-- SCRIPT CON GESTIONE LINGUA DA URL (QUERY PARAM ?lang=en) & TOAST -->
   <script>
     let currentLang = 'it';
 
     const langData = {
       en: {
-        badge: 'V2.5 Live • 60 Monuments • 25 Art Cities',
+        badge: 'V2.6 Live • 60 Monuments • 25 Art Cities',
         heroTitle: 'Less screens, more culture and <span class="text-green-400">real life</span>.',
         heroDesc: 'The Culture-Tech protocol on Solana that turns visits to 60 Italian historical sites into a verified digital passport with quizzes, quests, XP, and on-chain rewards.',
         btnMiniApp: '🏛️ Launch Live Passport WebApp',
@@ -485,13 +437,6 @@
         lblQuestTag: 'Gamification & Exclusive Badges',
         lblQuestTitle: 'Thematic Cultural Routes (Quests)',
         lblQuestSubtitle: 'Complete cross-city routes to unlock legendary badges and XP multipliers:',
-        lblV2eTitle: 'How the Cultural Passport Works',
-        lblStep1Title: '1. Map & Explore',
-        lblStep1Desc: 'Open the app on your mobile browser to locate 60 heritage sites across 25 Italian cities.',
-        lblStep2Title: '2. Check-In & Physical Quiz',
-        lblStep2Desc: 'Arrive at the site, validate via hardware GPS, snap a photo proof, and answer the on-site trivia.',
-        lblStep3Title: '3. Stamp, XP & Rewards',
-        lblStep3Desc: 'Collect your verified digital Polaroid stamp with date and photo, earn XP, and redeem Solana ecosystem rewards.',
         lblTravelTag: 'Travel-Tech & Sustainability',
         lblTravelTitle: 'Plan Your Cultural Trip with Verified Partners',
         lblTravelDesc: 'The $MEETO protocol integrates smart travel tools: flights, skip-the-line tickets, and global eSIMs. Every booking powers the $MEETO Buyback & Burn flywheel.',
@@ -501,19 +446,10 @@
         lblTrv2Desc: 'Direct entry vouchers for Colosseum, Uffizi, and Pompeii ruins.',
         lblTrv3Title: 'International eSIM (Airalo)',
         lblTrv3Desc: 'Instant 4G/5G data with zero roaming across 200+ countries to navigate and validate check-ins.',
-        lblChart: 'On-Chain Market Overview (Solana)',
-        lblTokTitle: '📊 Official Tokenomics (1B $MEETO Supply)',
-        lblTok1Title: 'Public Market',
-        lblTok1Desc: '700M $MEETO for decentralized liquidity and open circulation.',
-        lblTok2Title: 'Core Team & Ops',
-        lblTok2Desc: '200M $MEETO allocated for maintenance, hosting, R&D, and local contracts.',
-        lblTok3Title: 'Treasury & Rewards',
-        lblTok3Desc: '100M $MEETO reserved for cultural incentives and field explorers.',
-        lblOnchain: 'On-Chain Transparency & Solana Contracts',
-        lblDisclaimer: '<b>MEETO ($MEETO)</b> is an amateur and recreational experiment focused on gamifying artistic and historical heritage. The token serves purely as a digital souvenir and community utility. It does not constitute a financial product or investment.'
+        lblOnchain: 'On-Chain Transparency & Solana Contracts'
       },
       it: {
-        badge: 'V2.5 Live • 60 Monumenti • 25 Città d\'Arte',
+        badge: 'V2.6 Live • 60 Monumenti • 25 Città d\'Arte',
         heroTitle: 'Meno schermi, più cultura e <span class="text-green-400">vita reale</span>.',
         heroDesc: 'Il protocollo Culture-Tech su Solana che trasforma le tue visite in 60 monumenti italiani in un passaporto digitale verificato con quiz storici, rotte culturali, XP e ricompense on-chain.',
         btnMiniApp: '🏛️ Avvia Passaporto WebApp',
@@ -527,13 +463,6 @@
         lblQuestTag: 'Gamification & Badge Esclusivi',
         lblQuestTitle: 'Rotte Culturali Tematiche (Quests)',
         lblQuestSubtitle: 'Completa le rotte esplorando città diverse per sbloccare badge leggendari e moltiplicatori XP nel passaporto:',
-        lblV2eTitle: 'Come Funziona il Passaporto Culturale',
-        lblStep1Title: '1. Mappa & Esplora',
-        lblStep1Desc: 'Apri l\'app sul telefono e individua i 60 monumenti georeferenziati nelle 25 città d\'arte italiane.',
-        lblStep2Title: '2. Check-In & Quiz Fisico',
-        lblStep2Desc: 'Raggiungi il monumento (entro raggio GPS), scatta la foto ricordo e rispondi alla domanda culturale.',
-        lblStep3Title: '3. Timbro, XP & Ricompense',
-        lblStep3Desc: 'Ottieni il timbro Polaroid con data e foto nel passaporto, accumula XP e convertili in ricompense $MEETO on-chain.',
         lblTravelTag: 'Travel-Tech & Sostenibilità',
         lblTravelTitle: 'Pianifica il Tuo Viaggio con i Partner Ufficiali',
         lblTravelDesc: 'Il protocollo $MEETO integra servizi turistici reali con tariffe agevolate. Ogni prenotazione alimenta direttamente il meccanismo di Buyback & Burn del token $MEETO.',
@@ -543,22 +472,13 @@
         lblTrv2Desc: 'Ingressi prioritari ufficiali per Colosseo, Galleria degli Uffizi, Duomo e Scavi di Pompei.',
         lblTrv3Title: 'eSIM Dati Mobile (Airalo)',
         lblTrv3Desc: 'Connettività 4G/5G immediata senza roaming per navigare e validare i timbri GPS in oltre 200 paesi.',
-        lblChart: 'Andamento di Mercato On-Chain (Solana)',
-        lblTokTitle: '📊 Tokenomics Ufficiale (1 Miliardo $MEETO)',
-        lblTok1Title: 'Mercato Pubblico',
-        lblTok1Desc: '700M $MEETO per liquidità e circolante decentralizzato.',
-        lblTok2Title: 'Organizzatori & Team',
-        lblTok2Desc: '200M $MEETO allocati per mantenimento, ricerca & sviluppo e contratti territoriali.',
-        lblTok3Title: 'Treasury & Rewards',
-        lblTok3Desc: '100M $MEETO riservati a incentivi culturali per viaggiatori ed esploratori.',
-        lblOnchain: 'Trasparenza On-Chain & Contratti Solana',
-        lblDisclaimer: '<b>MEETO ($MEETO)</b> è un\'iniziativa amatoriale e ricreativa basata sulla gamification del patrimonio culturale e artistico. Il token ha finalità puramente di souvenir digitale e utilità all\'interno della community. Non costituisce un\'attività finanziaria, uno strumento di investimento o una promessa di rendimento economico.'
+        lblOnchain: 'Trasparenza On-Chain & Contratti Solana'
       }
     };
 
-    function toggleLanguage() {
-      currentLang = currentLang === 'it' ? 'en' : 'it';
-      const d = langData[currentLang];
+    function setLanguage(lang, updateUrl = true) {
+      currentLang = lang;
+      const d = langData[lang] || langData.it;
       
       const setElem = (id, html) => {
         const el = document.getElementById(id);
@@ -579,13 +499,6 @@
       setElem('lbl-quest-tag', d.lblQuestTag);
       setElem('lbl-quest-title', d.lblQuestTitle);
       setElem('lbl-quest-subtitle', d.lblQuestSubtitle);
-      setElem('lbl-v2e-title', d.lblV2eTitle);
-      setElem('lbl-step1-title', d.lblStep1Title);
-      setElem('lbl-step1-desc', d.lblStep1Desc);
-      setElem('lbl-step2-title', d.lblStep2Title);
-      setElem('lbl-step2-desc', d.lblStep2Desc);
-      setElem('lbl-step3-title', d.lblStep3Title);
-      setElem('lbl-step3-desc', d.lblStep3Desc);
       setElem('lbl-travel-tag', d.lblTravelTag);
       setElem('lbl-travel-title', d.lblTravelTitle);
       setElem('lbl-travel-desc', d.lblTravelDesc);
@@ -595,37 +508,56 @@
       setElem('lbl-trv2-desc', d.lblTrv2Desc);
       setElem('lbl-trv3-title', d.lblTrv3Title);
       setElem('lbl-trv3-desc', d.lblTrv3Desc);
-      setElem('lbl-chart', d.lblChart);
-      setElem('lbl-tokenomics-title', d.lblTokTitle);
-      setElem('lbl-tok1-title', d.lblTok1Title);
-      setElem('lbl-tok1-desc', d.lblTok1Desc);
-      setElem('lbl-tok2-title', d.lblTok2Title);
-      setElem('lbl-tok2-desc', d.lblTok2Desc);
-      setElem('lbl-tok3-title', d.lblTok3Title);
-      setElem('lbl-tok3-desc', d.lblTok3Desc);
       setElem('lbl-onchain', d.lblOnchain);
-      setElem('lbl-disclaimer', d.lblDisclaimer);
-      setElem('lang-text', currentLang === 'it' ? 'IT / EN' : 'EN / IT');
-    }
+      setElem('lang-text', currentLang.toUpperCase());
 
-    async function fetchTokenData() {
-      try {
-        const response = await fetch('https://api.dexscreener.com/latest/dex/tokens/4MPMa8mdsrjaCJGN1CrNG1dQDh357SEzoAu9QR7vpump');
-        const data = await response.json();
-        if (data && data.pairs && data.pairs.length > 0) {
-          const pair = data.pairs[0];
-          const price = parseFloat(pair.priceUsd);
-          const mcap = pair.fdv || pair.marketCap || 0;
-          document.getElementById('token-price').innerText = '$' + price.toFixed(8);
-          document.getElementById('token-mcap').innerText = '$' + (mcap >= 1000 ? (mcap / 1000).toFixed(2) + 'K' : Math.round(mcap));
-        }
-      } catch (e) {
-        console.warn('DexScreener fetch fallback:', e);
+      // Aggiorna l'attributo lang sul tag html
+      document.documentElement.lang = currentLang;
+
+      if (updateUrl && window.history.replaceState) {
+        const url = new URL(window.location);
+        url.searchParams.set('lang', currentLang);
+        window.history.replaceState({}, '', url);
       }
     }
-    fetchTokenData();
-    setInterval(fetchTokenData, 30000);
-  </script>
 
+    function toggleLanguage() {
+      const nextLang = currentLang === 'it' ? 'en' : 'it';
+      setLanguage(nextLang, true);
+    }
+
+    // Inizializzazione automatica in base a URL o lingua browser
+    window.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const paramLang = urlParams.get('lang');
+      if (paramLang && (paramLang === 'en' || paramLang === 'it')) {
+        setLanguage(paramLang, false);
+      } else {
+        const userNavLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+        if (userNavLang.startsWith('en')) {
+          setLanguage('en', false);
+        }
+      }
+    });
+
+    // Funzione Toast al posto di alert()
+    function copyContract(text, label) {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToast(label + ' copiato negli appunti!', text);
+        });
+      }
+    }
+
+    function showToast(title, desc) {
+      const toast = document.getElementById('toast-notification');
+      document.getElementById('toast-title').innerText = title;
+      document.getElementById('toast-desc').innerText = desc.substring(0, 32) + '...';
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3500);
+    }
+  </script>
 </body>
 </html>

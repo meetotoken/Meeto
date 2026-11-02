@@ -1,4 +1,24 @@
+# robots.txt per https://meetotoken.github.io/Meeto/
+# Regole di scansione per motori di ricerca e crawler IA
+
 User-agent: *
 Allow: /
 
+# Mappa del sito con supporto multilingua xhtml
 Sitemap: https://meetotoken.github.io/Meeto/sitemap.xml
+
+# Permesso esplicito per crawler di AI & Search
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
